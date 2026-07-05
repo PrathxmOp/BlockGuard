@@ -7,7 +7,7 @@ BlockGuard CLI works natively on Linux, macOS, and Windows. Follow the instructi
 The easiest way to install BlockGuard CLI on Linux and macOS is using our automated installation script:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/PrathxmOp/my-apis/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/PrathxmOp/BlockGuard/main/install.sh | sh
 ```
 
 This will automatically:
