@@ -26,7 +26,8 @@ export default defineConfig({
         items: [
           { text: 'Installation', link: '/guide/getting-started' },
           { text: 'Quick Start (5 Min)', link: '/guide/quick-start' },
-          { text: 'System-Wide Routing', link: '/guide/routing' }
+          { text: 'System-Wide Routing', link: '/guide/routing' },
+          { text: 'Router Setup (OpenWrt)', link: '/guide/router-setup' }
         ]
       },
       {

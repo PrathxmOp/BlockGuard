@@ -119,6 +119,12 @@ That's it! BlockGuard is now installed on your system.
 
 ### Manual Install
 
+Download precompiled binaries directly from the [GitHub Releases](https://github.com/PrathxmOp/BlockGuard/releases) page.
+
+### 📡 Router Installation (OpenWrt)
+
+To install BlockGuard directly on your router to protect your entire home network (including Smart TVs, mobile phones, and gaming consoles), follow the step-by-step [Router Setup Guide](https://prathxmop.github.io/BlockGuard/guide/router-setup.html).
+
 <details>
 <summary><b>🐧 Linux</b> (click to expand)</summary>
 
@@ -518,7 +524,7 @@ sudo resolvectl revert wlo1
 - **Background Daemon** — Runs silently in the background
 - **Hosts File Mode** — Optional `/etc/hosts` manipulation for an extra layer
 - **Custom Whitelisting** — Allow specific domains to bypass filters
-- **Cross-Platform** — Linux, macOS, and Windows
+- **Cross-Platform** — Linux, macOS, Windows, and Router OS (OpenWrt/MIPS/ARM)
 - **Auto-Updates** — Check and apply updates from the CLI
 
 ---
