@@ -284,7 +284,7 @@ unpack() {
   fi
 
   # Move files out of inner directory if one was created
-  dir_name=$(echo "${pkg_name}" | sed -E -e 's/(.*)(\.tar\.gz|\.zip)/\\1/' | sed -E -e 's/-[0-9]+\.[0-9]+\.[0-9]+//')
+  dir_name=$(echo "${pkg_name}" | sed -E -e 's/(.*)(\.tar\.gz|\.zip)/\1/' | sed -E -e 's/-[0-9]+\.[0-9]+\.[0-9]+//')
   if [ -d "${output_dir}/${dir_name}/" ]; then
     mv -f "${output_dir}/${dir_name}/"* "${output_dir}"
     rmdir "${output_dir}/${dir_name}"
