@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "BlockGuard CLI",
   description: "Modern, lightweight, system-wide DNS ad-blocker & tracker protection.",
+  base: '/BlockGuard/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
