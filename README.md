@@ -109,10 +109,10 @@ BlockGuard is a premium, highly affordable service costing **just $2 USD per mon
 
 ### One-Line Install (Linux & macOS)
 
-Open your terminal and paste this command:
+Run the following command in your terminal to install the latest version:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/PrathxmOp/my-apis/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/PrathxmOp/BlockGuard/main/install.sh | sh
 ```
 
 That's it! BlockGuard is now installed on your system.
