@@ -79,12 +79,6 @@ dig @127.0.0.1 adservice.google.com
 blockguard stop
 ```
 
-> **Tip:** To run without `sudo`, change the listen port:
-> ```bash
-> blockguard config set dns.listen_port 10053
-> blockguard start
-> ```
-
 ---
 
 ## 🔑 Subscription & Activation
@@ -184,21 +178,34 @@ Run `blockguard [command]` to manage the tool. Use `blockguard [command] --help`
 
 ---
 
-## 🔒 Privileged Permissions
+## 🔒 Privileged Permissions & System-Wide Setup
 
-Binding to the default DNS port `53` or writing to `/etc/hosts` requires **root/administrator** privileges:
+Binding to the default DNS port `53` requires **root/administrator** privileges. Start the service with `sudo`:
 
 ```bash
 sudo blockguard start
 ```
 
-To run as a non-privileged user, change the listen port:
+### Routing your System DNS through BlockGuard
+Once the server is running, you must point your system's network DNS settings to `127.0.0.1` so BlockGuard can filter your traffic:
+
+#### 🐧 Linux (Fedora/Ubuntu/Debian)
+Run this command in your terminal (replace `wlo1` or `eth0` with your active interface name):
 ```bash
-blockguard config set dns.listen_port 10053
-blockguard start
+# Temporarily set DNS for wlo1 interface
+sudo resolvectl dns wlo1 127.0.0.1
+sudo resolvectl flush-caches
 ```
 
-Then configure your system DNS to point to `127.0.0.1:10053`.
+#### 🍏 macOS
+1. Open **System Settings** -> **Network**.
+2. Select your active Wi-Fi or Ethernet connection, click **Details...** -> **DNS**.
+3. Add `127.0.0.1` as the primary DNS server.
+
+#### 🏁 Windows
+1. Open **Settings** -> **Network & internet** -> **Wi-Fi** (or **Ethernet**).
+2. Click **Hardware properties**, select **DNS server assignment** -> **Edit**.
+3. Choose **Manual**, enable **IPv4**, and enter `127.0.0.1` as the **Preferred DNS**.
 
 ---
 
