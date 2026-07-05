@@ -18,7 +18,7 @@
   <a href="#-installation">Installation</a> •
   <a href="#-how-to-use">How to Use</a> •
   <a href="#-get-a-license-key">Get a Key</a> •
-  <a href="#-command-reference">Commands</a>
+  <a href="DOCS.md"><b>Full Docs 📚</b></a>
 </p>
 
 ---
@@ -63,17 +63,30 @@ Ad never loads. Page loads faster. ✅
 
 ---
 
-## 🔑 Get a License Key
+## 🔑 Get a License Key & Pricing
 
-BlockGuard requires a subscription key to run. To purchase a license key:
+BlockGuard is a premium, highly affordable service costing **just $2 USD per month** (billed flexibly). 
+
+🎁 **Try before you buy:** Message us on Signal to get a **free 3-day trial key** with absolutely no commitment!
 
 <p align="center">
   <a href="https://signal.me/#eu/5hn89XV1PsUQlPRc0WhEoUEh197WioxzFJj-CTXOGe1Boymy0-FCub3zwWXa_L3a">
-    <img src="https://img.shields.io/badge/Signal-Message%20Us-3a76f0?style=for-the-badge&logo=signal&logoColor=white" alt="Contact on Signal" />
+    <img src="https://img.shields.io/badge/Signal-Message%20Us%20For%20Key-3a76f0?style=for-the-badge&logo=signal&logoColor=white" alt="Contact on Signal" />
   </a>
 </p>
 
-> **DM us on Signal** to get your license key. We offer flexible plans with different durations and device limits.
+> **DM us on Signal** to get your license key or request your free 3-day trial key. We support multiple payment options.
+
+### 💎 Why pay for BlockGuard over free tools?
+
+1. **System-wide Auto-Recovery (Worth it alone!)**  
+   Free terminal DNS tricks and scripts often leave your system DNS broken when they stop or crash, meaning your internet stops working entirely. BlockGuard CLI has a built-in safety net: when stopped, it **automatically restores your default DHCP settings** and safely restarts the resolver service, so your internet never breaks.
+2. **Ultimate App & Game Blocking**  
+   Free browser extensions like uBlock only protect that specific browser. BlockGuard filters all network traffic, stopping telemetry, trackers, and video/display ads inside native apps, desktop clients, games, and OS background tasks.
+3. **No Overhead or Bloat**  
+   Unlike heavy GUI-based local blockers, BlockGuard is written in optimized Go. It runs as a lightweight, low-footprint daemon with near-zero CPU usage and high-performance in-memory DNS caching.
+4. **Active Filter Management**  
+   Easily add, disable, enable, and self-update lists via simple CLI commands. Your subscription keeps the default rules (312,000+) updated daily.
 
 ---
 
